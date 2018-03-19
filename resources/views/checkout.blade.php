@@ -38,7 +38,7 @@
                         @foreach (Cart::content() as $item)
                         <div class="form-group">
                             <div class="col-sm-3 col-xs-3">
-                                <img src="{{ asset('img/' . $item->model->image) }}" alt="product" class="img-responsive cart-image">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/storage.merch-ent.com/img/{{ $item->model->image }}" alt="product" class="img-responsive cart-image">
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <div class="col-xs-12">{{ $item->name }}</div>

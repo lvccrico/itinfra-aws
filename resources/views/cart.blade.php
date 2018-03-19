@@ -66,7 +66,7 @@
                 <tbody>
                     @foreach (Cart::content() as $item)
                     <tr>
-                        <td class="table-image"><a href="{{ url('shop', [$item->model->slug]) }}"><img src="{{ asset('img/' . $item->model->image) }}" alt="product" class="img-responsive cart-image"></a></td>
+                        <td class="table-image"><a href="{{ url('shop', [$item->model->slug]) }}"><img src="https://s3-ap-southeast-1.amazonaws.com/storage.merch-ent.com/img/{{ $item->model->image }}" alt="product" class="img-responsive cart-image"></a></td>
                         <td><a href="{{ url('shop', [$item->model->slug]) }}">{{ $item->name }}</a></td>
                         <td>
                             <select class="quantity" data-id="{{ $item->rowId }}">

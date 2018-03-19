@@ -27,7 +27,7 @@
                     <div class="col-md-3">
                         <div class="thumbnail">
                             <div class="caption text-center">
-                                <a href="{{ url('shop', [$product->slug]) }}"><img src="{{ asset('img/' . $product->image) }}" alt="product" class="img-responsive"></a>
+                                <a href="{{ url('shop', [$product->slug]) }}"><img src="https://s3-ap-southeast-1.amazonaws.com/storage.merch-ent.com/img/{{ $product->image }}" alt="product" class="img-responsive"></a>
                                 <a href="{{ url('shop', [$product->slug]) }}"><h3>{{ $product->name }}</h3>
                                 <p>{{ $product->price }}</p>
                                 </a>
