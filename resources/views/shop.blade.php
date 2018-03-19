@@ -18,7 +18,7 @@
 
         <div class="jumbotron text-center clearfix">
             <h1>MerchEnt</h1>
-            <p>This is project will serve as a sample to show on how to use AWS EC2, S3 and RDS. A requirement for finals in IT Infrastructure ubject@ LVCC Apalit, Pampanga.</p>
+            <p>This is project will serve as a sample to show on how to use AWS EC2, S3 and RDS. A requirement for finals in IT Infrastructure subject@ LVCC Apalit, Pampanga.</p>
         </div> <!-- end jumbotron -->
 
         @foreach ($products->chunk(4) as $items)
